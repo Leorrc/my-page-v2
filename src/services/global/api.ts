@@ -2,7 +2,7 @@ import axios from 'axios'
 import { createRepoKey } from './keys'
 
 const URL = 'https://raw.githubusercontent.com/Leorrc'
-const repo_names = ['juliana-interior-designer', 'site-atc', 'SiteMaria','pokedex', 'my-page']
+const repo_names = ['juliana-interior-designer', 'site-atc', 'SiteMaria','pokedex', 'my-page-v2']
 
 async function getRepos() {
   createRepoKey()

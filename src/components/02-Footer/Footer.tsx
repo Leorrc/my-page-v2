@@ -73,7 +73,7 @@ export function Footer() {
                   <input
                     type="hidden"
                     name="_next"
-                    value="https://leocarvalhodev.com.br/"
+                    value="http://localhost:5173/obrigado.html"
                   />
 
                   <div className="flex items-end justify-end pb-3">
