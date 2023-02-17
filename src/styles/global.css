@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --header-height: 4.5rem;
+
+  /* colors */
+  --hue: 246;
+
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color-second: hsl(var(--hue) 100% 96% 1);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+
+  /* paleta de cores roxo */
+  --gengar: #5d5984;
+  --amarelo: #dfa500;
+
+  --header-color: #272638;
+
+  --roxo-1: #545078;
+  --roxo-2: #9c95de;
+  --roxo-3: #aea6f7;
+
+  --color: #6610f2;
+  --color2: #6f42c1;
+
+  /* fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+
+  --title-font: 'Poppins', sans-serif;
+}
+
+.divider1 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(246, 65%, 88%, 1),
+    hsla(246, 36%, 57%, 1)
+  );
+}
+
+.m0auto {
+  margin: 0 auto;
+}
+
+.gengar1 {
+  filter: drop-shadow(0 0 1em rgb(36, 15, 70));
+}
+
+.buttonsRepo {
+  width: 9.375rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.56rem;
+  transition: background 0.3s;
+  display: flex;
+  justify-content: center;
+  background: var(--color);
+  color: white;
+  gap: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.v1 {
+  border-left: 1px solid #525154;
+  height: 300px;
+  margin-top: 10rem;
+}
