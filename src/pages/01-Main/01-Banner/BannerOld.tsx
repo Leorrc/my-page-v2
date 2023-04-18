@@ -6,16 +6,21 @@ export function Banner() {
   return (
     <>
       <section
-        className="bg-gradient-to-r from-bg1 to-bg2 min-h-screen py-96 px-3"
+        className="bg-gradient-to-r from-bg1 to-bg2 min-h-screen py-64 px-3"
         id="hometop"
       >
-        <div className="grid font-display text-white text-lg  mx-auto my-auto justify-center items-center">
+        <div className="grid font-display text-white text-lg max-w-lg mx-auto">
+          <img
+            className="animate-[gengar_2s_ease-in-out_infinite] drop-shadow-[0_0_1rem_rgb(36,15,70)] w-80 md:w-[30rem] mx-auto"
+            src={img}
+            alt="gengar"
+          />
           <div className=" md:px-4">
             <span className="md:text-xl">Oi, eu sou</span>
-            <h1 className="text-amarelo text-3xl font-bold sm:text-5xl md:text-7xl">
+            <h1 className="text-amarelo text-3xl font-bold md:text-5xl">
               Leonardo Carvalho
             </h1>
-            <strong className="text-xl font-semibold  md:text-3xl">
+            <strong className="text-xl font-semibold md:text-3xl">
               Desenvolvedor FULL-STACK
             </strong>
           </div>
