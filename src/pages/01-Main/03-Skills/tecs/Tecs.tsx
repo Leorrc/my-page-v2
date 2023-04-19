@@ -1,6 +1,6 @@
 import styled from '../../../../images/style.svg'
-
 import vite from '../../../../images/vite.svg'
+import next from '../../../../images/next.png'
 
 export function Tecs() {
   return (
@@ -122,6 +122,16 @@ export function Tecs() {
           />
 
           <strong>React</strong>
+        </div>
+
+        <div className="flex flex-col items-center justify-center gap-1 p-4">
+          <img
+            src={next}
+            alt="icon skill"
+            className="w-16 h-16"
+          />
+
+          <strong>Next.JS</strong>
         </div>
 
         <div className="flex flex-col items-center justify-center gap-1 p-4">
