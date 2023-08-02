@@ -1,5 +1,5 @@
 import { HiX } from 'react-icons/hi'
-import { Link as LinkS } from 'react-scroll'
+import { Link } from 'react-router-dom'
 
 type Props = {
   isOpen: boolean
@@ -12,61 +12,61 @@ export function SideBar({ isOpen, toggle }: Props) {
       <aside
         className={
           isOpen
-            ? 'fixed z-[999] h-screen w-screen bg-gengar top-0 left-0 grid place-content-center ease-in-out duration-300'
+            ? 'fixed z-[999] h-screen w-screen bg-colorBg top-0 left-0 grid place-content-center ease-in-out duration-300'
             : 'hidden'
         }
       >
         <div className="absolute right-10 toggle top-6">
           <HiX
             onClick={toggle}
-            className="text-white text-2xl cursor-pointer"
+            className="text-Ttitle text-2xl cursor-pointer hover:text-primaryHover"
           />
         </div>
-        <ul className="grid gap-16 text-white text-3xl uppercase cursor-pointer font-bold text-center">
+        <ul className="grid gap-16 text-white text-3xl cursor-pointer font-bold text-center">
           <li className="">
-            <LinkS
-              className="titleHeader hover:text-roxo2 transition-colors relative group"
-              to="hometop"
+            <Link
+              className="hover:text-primaryHover transition-colors relative group"
+              to="/"
               onClick={toggle}
             >
-              Home
-            </LinkS>
+              Início
+            </Link>
           </li>
           <li className="">
-            <LinkS
-              className="titleHeader hover:text-roxo2 transition-colors relative group"
-              to="IdProject"
-              onClick={toggle}
-            >
-              Portfólio
-            </LinkS>
-          </li>
-          <li className="">
-            <LinkS
-              className="titleHeader hover:text-roxo2 transition-colors relative group"
-              to="IdAbout"
+            <Link
+              className="hover:text-primaryHover transition-colors relative group"
+              to="/about"
               onClick={toggle}
             >
               Sobre mim
-            </LinkS>
+            </Link>
           </li>
           <li className="">
-            <LinkS
-              className="titleHeader hover:text-roxo2 transition-colors relative group"
-              to="IdSkill"
+            <Link
+              className="hover:text-primaryHover transition-colors relative group"
+              to="/projects"
+              onClick={toggle}
+            >
+              Portfólio
+            </Link>
+          </li>
+          <li className="">
+            <Link
+              className="hover:text-primaryHover transition-colors relative group"
+              to="/skills"
               onClick={toggle}
             >
               Habilidades
-            </LinkS>
+            </Link>
           </li>
           <li className="">
-            <LinkS
-              className="titleHeader hover:text-roxo2 transition-colors relative group"
-              to="IdContact"
+            <Link
+              className="hover:text-primaryHover transition-colors relative group"
+              to="/contact"
               onClick={toggle}
             >
               Contato
-            </LinkS>
+            </Link>
           </li>
         </ul>
       </aside>

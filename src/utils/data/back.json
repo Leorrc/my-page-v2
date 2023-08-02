@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Node.JS",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+  },
+  {
+    "name": "Prisma.io",
+    "img": "/imgs-skill/prisma.svg"
+  },
+  {
+    "name": "Restful API",
+    "img": "/imgs-skill/rest.svg"
+  },
+  {
+    "name": "SOLID",
+    "img": "/imgs-skill/solid.svg"
+  },
+  {
+    "name": "JWT",
+    "img": "/imgs-skill/jwt.svg"
+  },
+  {
+    "name": "Axios",
+    "img": "/imgs-skill/axios.png"
+  },
+  {
+    "name": "JSON API's",
+    "img": "/imgs-skill/jsonapi.png"
+  },
+  {
+    "name": "Express.JS",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+  },
+
+  {
+    "name": "Vitest",
+    "img": "/imgs-skill/vitest.png"
+  },
+  {
+    "name": "MongoDB",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+  },
+  {
+    "name": "Docker",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg"
+  },
+  {
+    "name": "MySQL",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+  },
+  {
+    "name": "PostGreSQL",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"
+  },
+  {
+    "name": "AWS",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+  },
+  {
+    "name": "FireBase",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+  }
+]

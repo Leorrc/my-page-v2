@@ -1,6 +1,6 @@
 import { FaBars } from 'react-icons/fa'
-import logo from '../../../images/logo1.svg'
-import { Link as LinkS } from 'react-scroll'
+import logo from '../../../images/logoH.svg'
+import { Link } from 'react-router-dom'
 
 type Props = {
   toggle1: () => void
@@ -9,48 +9,73 @@ type Props = {
 export function NavBar({ toggle1 }: Props) {
   return (
     <>
-      <header className="fixed top-0 left-0 z-[100] w-full border-b-2 border-white bg-headerColor">
-        <nav className="flex items-center justify-between max-w-5xl h-[72px] ml-auto mr-auto py-0 px-4">
-          <LinkS to="hometop">
-            <img
-              className="w-auto h-[72px] cursor-pointer"
-              src={logo}
-              alt="Logo"
-            />
-          </LinkS>
-          <div onClick={toggle1} className="md:hidden text-2xl cursor-pointer ">
-            <FaBars className="text-white" />
+      <div className='w-full bg-colorFt flex justify-center static border-b border-shapeDark'>
+
+        <header className="w-full h-[82px] flex flex-row justify-between items-center max-w-[1440px] py-0 px-6">
+
+          <div className='flex items-center justify-between'>
+            <Link to="/">
+              <img
+                className="w-full h-full cursor-pointer"
+                src={logo}
+                alt="Logo"
+              />
+            </Link>
           </div>
 
-          <ul className="hidden md:flex gap-7 text-white capitalize font-display text-lg">
-            <LinkS to="hometop" offset={-72}>
-              <li className="text-center">
-                <div className="h-full cursor-pointer">Início</div>
+          <nav className="flex items-center justify-between max-w-5xl py-0 px-4 lg:px-0">
+
+            <div onClick={toggle1} className="right-0 md:hidden text-2xl cursor-pointer">
+              <FaBars className="text-Ttitle" />
+            </div>
+
+            <ul className="hidden text-base text-text md:flex gap-7 hover:transition-colors">
+
+              <li className="text-center items-start">
+                <Link
+                  to="/"
+                  className="h-full cursor-pointer relative group hover:text-Ttitle"
+                >
+                  Início
+                  <div className="absolute w-full h-[1px] bg-primary scale-x-0 group-hover:scale-x-100 transition-all " />
+                </Link>
               </li>
-            </LinkS>
-            <LinkS to="IdProject" offset={-72}>
+
               <li className="text-center">
-                <div className="h-full cursor-pointer">Portfólio</div>
+                <Link
+                  to="/about"
+                  className="h-full cursor-pointer relative group hover:text-Ttitle"
+                >
+                  Sobre mim
+                  <div className="absolute w-full h-[1px] bg-primary scale-x-0 group-hover:scale-x-100 transition-all " />
+                </Link>
               </li>
-            </LinkS>
-            <LinkS to="IdAbout" offset={-72}>
+
               <li className="text-center">
-                <div className="h-full cursor-pointer">Sobre mim</div>
+                <Link
+                  to="/projects"
+                  className="h-full cursor-pointer relative group hover:text-Ttitle"
+                >
+                  Portfólio
+                  <div className="absolute w-full h-[1px] bg-primary scale-x-0 group-hover:scale-x-100 transition-all " />
+                </Link>
               </li>
-            </LinkS>
-            <LinkS to="IdSkill" offset={-72}>
+
               <li className="text-center">
-                <div className="h-full cursor-pointer">Habilidades</div>
+                <Link
+                  to="/skills"
+                  className="h-full cursor-pointer relative group hover:text-Ttitle"
+                >
+                  Habilidades
+                  <div className="absolute w-full h-[1px] bg-primary scale-x-0 group-hover:scale-x-100 transition-all " />
+                </Link>
               </li>
-            </LinkS>
-            <LinkS to="IdContact" offset={-72}>
-              <li className="text-center">
-                <div className="h-full cursor-pointer">Contato</div>
-              </li>
-            </LinkS>
-          </ul>
-        </nav>
-      </header>
+
+            </ul>
+          </nav>
+
+        </header>
+      </div>
     </>
   )
 }
