@@ -24,7 +24,7 @@ export function Home() {
               <FaDownload className="text-xl" />
             </a>
 
-            <Link className='bg-colorBg w-full h-10 p-5 rounded-[5px] border border-primary justify-center items-center gap-3 inline-flex hover:bg-primaryHover transition-colors' to="/about">
+            <Link className='bg-colorBg w-full h-10 p-5 rounded-[5px] border border-primary justify-center items-center gap-3 inline-flex hover:bg-primaryHover transition-colors' to="/projects">
               <button className="text-sm font-bold uppercase leading-tight">
                 Ver Projetos
               </button>
