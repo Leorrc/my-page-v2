@@ -71,10 +71,21 @@ export function NavBar({ toggle1 }: Props) {
                 </Link>
               </li>
 
+              <li className="text-center">
+                <Link
+                  to="/about"
+                  className="h-full cursor-pointer relative group hover:text-Ttitle"
+                >
+                  Contato
+                  <div className="absolute w-full h-[1px] bg-primary scale-x-0 group-hover:scale-x-100 transition-all " />
+                </Link>
+              </li>
+
             </ul>
           </nav>
 
         </header>
+
       </div>
     </>
   )

@@ -62,7 +62,7 @@ export function SideBar({ isOpen, toggle }: Props) {
           <li className="">
             <Link
               className="hover:text-primaryHover transition-colors relative group"
-              to="/contact"
+              to="/about"
               onClick={toggle}
             >
               Contato
