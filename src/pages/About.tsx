@@ -1,14 +1,14 @@
 import avatar from '../images/newAvatar.png'
 import icon from '../assets/about.svg'
 import { Divider } from '../components/Dividers/Divider'
+import { Contact } from '../components/02-Footer/Contact'
 
 export function About() {
   return (
-    <section className='w-full items-center justify-center flex px-7'>
+    <section className="w-full items-center justify-center flex px-7">
       <div className="flex flex-col">
-
-        <header className='py-10 px-8'>
-          <div className='flex items-center justify-center'>
+        <header className="py-10 px-8">
+          <div className="flex items-center justify-center">
             <h2 className="flex justify-center gap-4 text-Ttitle text-center items-center w-full font-bold text-3xl lg:text-4xl">
               <img src={icon} alt="" />
               Sobre mim
@@ -18,7 +18,7 @@ export function About() {
 
         <Divider />
 
-        <div className='flex flex-col gap-4 mt-8'>
+        <div className="flex flex-col gap-4 my-10">
           <div className="flex flex-col gap-8 mx-auto lg:flex-row-reverse lg:justify-center lg:items-center lg:gap-20 lg:py-24">
             <div className="flex flex-col gap-4 items-center">
               <p className="text-justify leading-7 max-w-lg font-display">
@@ -50,7 +50,6 @@ export function About() {
             </div>
 
             <div className="mx-auto">
-
               <div className="max-w-[15rem] shadow-xl">
                 <img
                   src={avatar}
@@ -64,12 +63,11 @@ export function About() {
                   <h4 className="text-Tbase">Full-Stack</h4>
                 </div>
               </div>
-
             </div>
-
           </div>
         </div>
-
+        <Divider />
+        <Contact />
       </div>
     </section>
   )

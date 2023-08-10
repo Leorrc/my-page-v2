@@ -1,4 +1,3 @@
-import { MdAdsClick } from 'react-icons/md'
 import { FaGithub } from 'react-icons/fa'
 import { useQuery } from 'react-query'
 import { api } from '../services/global/api'
@@ -13,7 +12,7 @@ export function Projects() {
       <div className="flex flex-col items-center">
 
         <div className="flex flex-col gap-4 py-10 px-8">
-          <h2 className="flex justify-center gap-4 text-Ttitle text-center items-center w-full font-bold text-3xl lg:text-4xl">
+          <h2 className="flex justify-center gap-4  text-Ttitle text-center items-center w-full font-bold text-3xl lg:text-4xl">
             <img src={icon} alt="" />
             Projetos Recentes
           </h2>
